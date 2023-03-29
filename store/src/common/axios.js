@@ -1,10 +1,11 @@
 import axios from "axios"
-import { headers } from "../../next.config";
+
+import { CONFIG_SERVER } from "./environment "
 
 const instance = axios.create({
-    baseURL: 'https://api.bigcommerce.com/stores/s9ye4xe3x0/v3',
+    baseURL: CONFIG_SERVER.URL_API,
     headers: {
-        'X-Auth-Token': "wo9e40w72wf7f21kpz3xfgfiwmeffz"
+        'X-Auth-Token': CONFIG_SERVER.ACCESS_TOKEN
     }
 });
 

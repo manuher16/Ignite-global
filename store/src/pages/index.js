@@ -8,6 +8,8 @@ const inter = Inter({ subsets: ['latin'] })
 import HomeView from '@/layouts/home'
 import Navbar from '@/components/navbar'
 export default function Home() {
+
+
   return (
     <>
       <Head>

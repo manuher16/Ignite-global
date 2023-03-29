@@ -1,6 +1,14 @@
 import Product from "@/components/product"
 import { Container, Col, Row } from "react-bootstrap"
+import { useEffect } from "react"
+import { getCatalog } from "@/pages/api/product"
 export default function CatalogProducts() {
+
+    useEffect(() => {
+        getCatalog().then(res => {
+            console.log(res)
+        })
+    }, [])
 
     const products = []
     for (let i = 0; i < 10; i++) {
