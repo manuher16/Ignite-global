@@ -6,17 +6,23 @@ export default function Checkout() {
         <Container>
             <Card className="my-3" bg="transparent" border="primary" >
                 <Card.Body>
-                    <Card.Title>Checkout</Card.Title>
+                    <div>
 
-                    <Card.Text></Card.Text>
-                    <Card.Text></Card.Text>
-                    <div className="d-flex justify-content-around" >
-                        <div>subtotal</div>
+                    </div>
+                    <Card.Title>Checkout (5)</Card.Title>
+
+
+                    <div className="d-flex justify-content-around mt-3" >
+                        <div>Subtotal</div>
                         <div>10,000 HNL</div>
                     </div>
                     <div className="d-flex justify-content-around" >
                         <div>Tax</div>
                         <div>10,000 HNL</div>
+                    </div>
+                    <div className="d-flex justify-content-around" >
+                        <div>Shipping</div>
+                        <div>500 HNL</div>
                     </div>
                     <Divider />
                     <div className="d-flex justify-content-around" >

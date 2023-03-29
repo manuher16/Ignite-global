@@ -2,9 +2,9 @@ export default function Divider(props) {
     const styles = {
         divider_container: {
             backgroundColor: "white",
-            height: "0.004rem",
-            width: props.inset ? '80%' : '100%',
-            borderRadius: "50%",
+            height: "1px",
+            width: props.inset ? '90%' : '100%',
+            borderRadius: "50px",
             marginTop: "8px",
             marginBottom: "15px",
         }

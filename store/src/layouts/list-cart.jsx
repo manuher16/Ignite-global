@@ -10,7 +10,9 @@ export default function ListCart(props) {
                     <Product />
                 </Col>
             </Row>
-            <Divider inset={true} />
+            <div className="d-flex justify-content-center">
+                <Divider inset={true} />
+            </div>
         </>
         )
     }
