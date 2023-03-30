@@ -22,7 +22,7 @@ export default function Snackbar(props) {
         }
     }
     const [timeout, settimeout] = useState(props.timeout || 3000)
-    const [message, setMessage] = useState(props.message || null)
+    const [message, setMessage] = useState(props.message || "")
     function handlerShow() {
         setShow(true)
         setTimeout(() => setShow(false), timeout)

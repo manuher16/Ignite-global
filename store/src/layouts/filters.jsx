@@ -4,9 +4,9 @@ import { Row, Col } from "react-bootstrap"
 import Checkbox from "@/components/checkbox"
 export default function Filters() {
     return (
-        <div className="d-flex flex-column">
+        <div className="d-flex flex-column mx-2">
             <div>
-                Filtros de busqueda
+                Filtros
             </div>
             <Divider />
             Price

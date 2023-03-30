@@ -13,7 +13,7 @@ export default function CatalogProducts() {
     }, [])
 
     const products = []
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 8; i++) {
         products.push(
             <Col className="my-3" md="3" key={i}>
                 <Product />
@@ -31,7 +31,7 @@ export default function CatalogProducts() {
             <Row>
                 {products}
             </Row>
-            <Pagination length={3} />
+            <Pagination length={5} />
         </div>
     </>)
 }

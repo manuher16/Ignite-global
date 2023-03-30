@@ -24,9 +24,9 @@ export default function TextField(props) {
         }
     }
 
-    const label = props.label || null
-    const value = props.value || null
-    const placeholder = props.placeholder || null
+    const label = props.label || ""
+    const value = props.value || ""
+    const placeholder = props.placeholder || ""
     return (
         <div style={styles.input_container} className="d-flex  flex-column justify-content-center px-2 mx-2">
             {(label ? <span style={styles.input_label}>{label}</span> : '')}

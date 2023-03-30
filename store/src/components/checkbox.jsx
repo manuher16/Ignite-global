@@ -2,7 +2,7 @@ import { useState } from "react"
 
 
 export default function Checkbox(props) {
-    const label = props.label || null
+    const label = props.label || ""
     const [value, setValue] = useState(props.value || true)
     const handlerChangeValue = (e) => {
         console.log(e)

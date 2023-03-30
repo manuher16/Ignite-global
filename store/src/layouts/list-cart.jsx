@@ -3,7 +3,7 @@ import Product from "@/components/horizontal-product"
 import { Col, Row } from "react-bootstrap"
 export default function ListCart(props) {
     const products = []
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < 3; i++) {
         products.push(<>
             <Row key={i}>
                 <Col>
