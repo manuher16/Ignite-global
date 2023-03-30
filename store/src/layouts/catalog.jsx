@@ -2,6 +2,8 @@ import Product from "@/components/product"
 import { Container, Col, Row } from "react-bootstrap"
 import { useEffect } from "react"
 import { getCatalog } from "@/pages/api/product"
+import Divider from "@/components/divider"
+import Pagination from "@/components/pagination"
 export default function CatalogProducts() {
 
     useEffect(() => {
@@ -20,10 +22,16 @@ export default function CatalogProducts() {
     }
     return (<>
         <h4>Catalogo</h4>
-        <Container>
+        <div className="d-flex justify-content-between px-3">
+            <div>Articules(14)</div>
+            <div> page 1-4</div>
+        </div>
+        <Divider />
+        <div className="px-4">
             <Row>
                 {products}
             </Row>
-        </Container>
+            <Pagination length={3} />
+        </div>
     </>)
 }

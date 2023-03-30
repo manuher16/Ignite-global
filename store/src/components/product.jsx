@@ -21,10 +21,10 @@ export default function Product(props) {
                     </Row>
                     <div className="text-end my-2">
 
-                        <Snackbar message="Prodcuto agregado exitosamente" />
                     </div>
                 </Card.Body>
-                <Snackbar />
+                <Snackbar message="Prodcuto agregado exitosamente" />
+
             </Card>
         </div>
     )
