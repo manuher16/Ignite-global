@@ -3,6 +3,20 @@ import TextField from "./input";
 import Select from "./select";
 import Link from "next/link";
 export default function HorizontalProduct() {
+
+    const styles = {
+        stock: {
+            display: "block",
+            width: "80px",
+            borderColor: "green",
+            borderWidth: "2px",
+            font: "18px ",
+            fontWeight: "bold",
+            color: "green",
+            border: " 3px solid green",
+            borderRadius: "50px"
+        }
+    }
     const methods_shipping = [{
         name: "Express",
     }, {
@@ -25,6 +39,9 @@ export default function HorizontalProduct() {
                                 fontWeight: 'bold'
                             }}>Iphone 14 Pro Max 128GB 5G+</h4>
                         </Link>
+                        <div style={styles.stock} className="d-flex justify-content-center">
+                            In Stock
+                        </div>
                         <div>Price  <span style={{ fontWeight: "bold" }}>
                             23,499HNL
                         </span>

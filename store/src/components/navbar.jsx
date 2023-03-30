@@ -28,7 +28,9 @@ export default function Navbar(prps) {
     return (
         <div style={styles.navbar_container_fixed}>
             <div style={styles.navbar_container} className="d-flex justify-content-between px-3 align-content-center pt-2 ">
-                <div style={styles.title_nav}>Store Ignite 1</div>
+                <Link href="/">
+                    <div style={styles.title_nav}>Store Ignite 1</div>
+                </Link>
                 <div>
                     <Link href="/cart">
                         <Badge length={10}>

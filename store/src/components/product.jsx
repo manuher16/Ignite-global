@@ -1,5 +1,5 @@
 import { Card, Row, Col, Button } from "react-bootstrap";
-
+import Snackbar from "./snackbar";
 export default function Product(props) {
 
     const styles = {
@@ -20,10 +20,11 @@ export default function Product(props) {
                         <Col className="text-end">Rating 4.5</Col>
                     </Row>
                     <div className="text-end my-2">
-                        <Button>Add</Button>
+
+                        <Snackbar message="Prodcuto agregado exitosamente" />
                     </div>
                 </Card.Body>
-
+                <Snackbar />
             </Card>
         </div>
     )
